@@ -40,7 +40,7 @@ Partial Class SaleFrm
         Me.lblSaleId = New System.Windows.Forms.Label()
         Me.SaleGrid = New System.Windows.Forms.DataGridView()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.CB_SaleID = New System.Windows.Forms.ComboBox()
         Me.btnAdd = New System.Windows.Forms.Button()
         Me.btnCheckOut = New System.Windows.Forms.Button()
         Me.btnClear = New System.Windows.Forms.Button()
@@ -229,15 +229,15 @@ Partial Class SaleFrm
         Me.Label2.TabIndex = 17
         Me.Label2.Text = "Select Sale ID"
         '
-        'ComboBox1
+        'CB_SaleID
         '
-        Me.ComboBox1.BackColor = System.Drawing.Color.LightGray
-        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(221, 84)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(191, 23)
-        Me.ComboBox1.TabIndex = 18
+        Me.CB_SaleID.BackColor = System.Drawing.Color.LightGray
+        Me.CB_SaleID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CB_SaleID.FormattingEnabled = True
+        Me.CB_SaleID.Location = New System.Drawing.Point(221, 84)
+        Me.CB_SaleID.Name = "CB_SaleID"
+        Me.CB_SaleID.Size = New System.Drawing.Size(191, 23)
+        Me.CB_SaleID.TabIndex = 18
         '
         'btnAdd
         '
@@ -343,7 +343,7 @@ Partial Class SaleFrm
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnCheckOut)
         Me.Controls.Add(Me.btnAdd)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.CB_SaleID)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.SaleGrid)
         Me.Controls.Add(Me.lblSaleId)
@@ -389,7 +389,7 @@ Partial Class SaleFrm
     Friend WithEvents lblSaleId As Label
     Friend WithEvents SaleGrid As DataGridView
     Friend WithEvents Label2 As Label
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents CB_SaleID As ComboBox
     Friend WithEvents btnAdd As Button
     Friend WithEvents btnCheckOut As Button
     Friend WithEvents btnClear As Button

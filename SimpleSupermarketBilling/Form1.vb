@@ -8,6 +8,7 @@
     End Sub
 
     Private Sub UpdateSaleToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UpdateSaleToolStripMenuItem.Click
+        GlobalVariables.FormType = "UpdateSaleForm"
         Dim SaleFrm1 As New SaleFrm
         SaleFrm1.MdiParent = Me
         SaleFrm1.Show()
