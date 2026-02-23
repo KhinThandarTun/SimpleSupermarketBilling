@@ -27,6 +27,20 @@
         FileUploadFrm1.MdiParent = Me
         FileUploadFrm1.Show()
     End Sub
+
+    Private Sub RegisterToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RegisterToolStripMenuItem.Click
+        GlobalVariables.FormType = "RegisterForm"
+        Dim RegisterFrm1 As New RegisterFrm
+        RegisterFrm1.MdiParent = Me
+        RegisterFrm1.Show()
+    End Sub
+
+    Private Sub LoginToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LoginToolStripMenuItem.Click
+        GlobalVariables.FormType = "LoginForm"
+        Dim LoginFrm1 As New LoginFrm
+        LoginFrm1.MdiParent = Me
+        LoginFrm1.Show()
+    End Sub
 End Class
 
 Public Class GlobalVariables
