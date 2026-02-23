@@ -20,6 +20,13 @@
         SaleFrm1.MdiParent = Me
         SaleFrm1.Show()
     End Sub
+
+    Private Sub FileUploadToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FileUploadToolStripMenuItem.Click
+        GlobalVariables.FormType = "FileUploadForm"
+        Dim FileUploadFrm1 As New FileUploadFrm
+        FileUploadFrm1.MdiParent = Me
+        FileUploadFrm1.Show()
+    End Sub
 End Class
 
 Public Class GlobalVariables

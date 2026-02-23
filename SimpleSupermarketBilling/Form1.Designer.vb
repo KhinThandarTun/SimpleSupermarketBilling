@@ -33,6 +33,7 @@ Partial Class MainFrm
         Me.BillingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SaleToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UpdateSaleToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FileUploadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.ToolStripSplitButton1 = New System.Windows.Forms.ToolStripSplitButton()
         Me.Status_Message = New System.Windows.Forms.ToolStripStatusLabel()
@@ -74,7 +75,7 @@ Partial Class MainFrm
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.BillingToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1383, 30)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1383, 28)
         Me.MenuStrip1.TabIndex = 3
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -88,12 +89,12 @@ Partial Class MainFrm
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(116, 26)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'BillingToolStripMenuItem
         '
-        Me.BillingToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SaleToolStripMenuItem, Me.UpdateSaleToolStripMenuItem})
+        Me.BillingToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SaleToolStripMenuItem, Me.UpdateSaleToolStripMenuItem, Me.FileUploadToolStripMenuItem})
         Me.BillingToolStripMenuItem.Name = "BillingToolStripMenuItem"
         Me.BillingToolStripMenuItem.Size = New System.Drawing.Size(65, 24)
         Me.BillingToolStripMenuItem.Text = "Billing"
@@ -109,6 +110,12 @@ Partial Class MainFrm
         Me.UpdateSaleToolStripMenuItem.Name = "UpdateSaleToolStripMenuItem"
         Me.UpdateSaleToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.UpdateSaleToolStripMenuItem.Text = "UpdateSale"
+        '
+        'FileUploadToolStripMenuItem
+        '
+        Me.FileUploadToolStripMenuItem.Name = "FileUploadToolStripMenuItem"
+        Me.FileUploadToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.FileUploadToolStripMenuItem.Text = "FileUpload"
         '
         'StatusStrip1
         '
@@ -172,4 +179,5 @@ Partial Class MainFrm
     Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents UpdateSaleToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents FileUploadToolStripMenuItem As ToolStripMenuItem
 End Class
